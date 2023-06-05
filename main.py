@@ -32,3 +32,8 @@ print(my_dict)#{'a': 23, 'b': 551, 'c': 98}
 my_dict={key:value**2 for (key,value) in other_dict.items()}
 
 print(my_dict)#{'a': 529, 'b': 303601, 'c': 9604}
+
+# Para no se warde el valor de b
+my_dict={key:value**2 for (key,value) in other_dict.items() if key != "b"}
+
+print(my_dict)#{'a': 529, 'c': 9604}
