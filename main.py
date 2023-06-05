@@ -16,5 +16,19 @@ print(my_dict)#{'Alex': 22, 'Anna': 33, 'Petter': 43, 'Angela': 51}
 my_dict ={name[i]:random.randint(10,50) for i in range(len(name))}
 print(my_dict)#{'Alex': 22, 'Anna': 33, 'Petter': 43, 'Angela': 51}
 
+# Otra forma
 
+other_dict = {
+    "a":23,
+    "b":551,
+    "c":98
+}
 
+my_dict={key:value for (key,value) in other_dict.items()}
+
+print(my_dict)#{'a': 23, 'b': 551, 'c': 98}
+
+# Elevamos valores al cuadrado
+my_dict={key:value**2 for (key,value) in other_dict.items()}
+
+print(my_dict)#{'a': 529, 'b': 303601, 'c': 9604}
